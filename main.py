@@ -25,7 +25,7 @@ def login():
     return render_template("home.html")
 
 
-######### Register route for homepage, and it will runa check in accounts.json to make sure account doesn't exist already #########
+######### Register route for homepage, and it will run a check in accounts.json to make sure account doesn't exist already #########
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -40,7 +40,7 @@ def register():
             if jsonstuff.registercheck(newaccount) == "success":
                 flash("Account registered!", category="success")
             else:
-                flash("That username already exists!", category="failure")
+                flash("That username already exists!", category="error")
     return render_template("register.html", boolean=True)
 
 
