@@ -1,5 +1,4 @@
 from flask import Flask, flash, render_template, redirect, request
-from flask_sqlalchemy import SQLAlchemy
 import jsonstuff
 
 app = Flask(__name__)
