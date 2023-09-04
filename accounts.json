@@ -1,0 +1,12 @@
+{
+    "accounts": [
+        {
+            "username": "defaultuser",
+            "password": "defaultpass"
+        },
+        {
+            "username": "e",
+            "password": "e"
+        }
+    ]
+}
