@@ -45,4 +45,4 @@ def register():
 
 ######### Run in debug mode so that when you make changes, it auto updates the server without having to restart #########
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
